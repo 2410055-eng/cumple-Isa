@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sofía cumple 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+<style>
+/* Una sola columna tipo invitación: portada en arco con globos, luego tarjetas con borde dorado */
+:root{
+  --wine:#7E0C1E; --wine-hi:#A3182B; --wine-lo:#5C0814;
+  --gold:#D4AF5A; --gold-hi:#F0D486; --ink:#F6E6BE; --label:#E7C36A; --btn-ink:#4A0612;
+  --script:'Great Vibes', 'Brush Script MT', cursive;
+  --serif:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  color-scheme: dark;
+}
+html,body{background:var(--wine-lo)}
+body{color:var(--ink);font-family:var(--serif);font-size:19px}
+.bg{position:relative;overflow:hidden;min-height:100vh;background:linear-gradient(170deg,var(--wine-hi) 0%,var(--wine) 40%,var(--wine-lo) 100%)}
+.bg::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px);pointer-events:none}
+.bg::after{content:"";position:absolute;left:0;right:0;top:0;height:160px;background:linear-gradient(180deg,rgba(214,170,70,.6),rgba(214,170,70,0));pointer-events:none}
+#glitter{position:absolute;inset:0 0 auto 0;height:300px;pointer-events:none;z-index:1}
+#glitter i{position:absolute;border-radius:50%}
+.wrap{position:relative;z-index:2;max-width:480px;margin:0 auto;padding-block:24px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+.gold{background:linear-gradient(100deg,#A87822 0%,#E7C36A 25%,#FFF0B5 40%,#D3A23E 55%,#B8862B 75%,#F0D486 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{border:1.5px solid var(--gold);border-radius:240px 240px 24px 24px;padding:28px 16px 30px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero svg{width:250px;max-width:100%;height:auto}
+h1{margin:-96px 0 0;position:relative;font-family:var(--script);font-weight:400;font-size:76px;line-height:1.2;padding:0 12px}
+.sub{margin:4px 0 0;font-size:20px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.lead{margin:10px 0 0;font-style:italic;font-size:20px;line-height:1.4;max-width:300px}
+.card{border:1px solid rgba(212,175,90,.55);background:rgba(0,0,0,.18);border-radius:20px;padding:20px 18px;display:flex;flex-direction:column;gap:12px}
+.eyebrow{margin:0;font-size:15px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--label);text-align:center}
+.count{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;text-align:center}
+.count div{background:rgba(0,0,0,.22);border:1px solid rgba(212,175,90,.4);border-radius:14px;padding:10px 2px;display:flex;flex-direction:column;gap:2px}
+.count b{font-size:34px;line-height:1;font-variant-numeric:tabular-nums}
+.count span{font-size:14px;font-weight:600}
+.when{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));text-align:center;border-block:1px solid var(--gold);padding:12px 0}
+.when div{display:flex;flex-direction:column;gap:2px}
+.when div+div{border-left:1px solid var(--gold)}
+.when small{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--label)}
+.when strong{font-size:26px;line-height:1.1}
+.place{display:flex;gap:12px;align-items:flex-start}
+.place svg{flex:none;margin-top:3px}
+.place div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.btns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.btns a{min-height:48px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--gold);border-radius:999px;font-weight:700;font-size:18px;text-decoration:none;color:var(--gold-hi)}
+h2{margin:0;font-family:var(--script);font-weight:400;font-size:40px;line-height:1.1}
+.prog{display:grid;grid-template-columns:84px minmax(0,1fr);row-gap:8px}
+.prog b{color:var(--label)}
+.center{text-align:center}
+.cta{display:flex;flex-direction:column;gap:10px;text-align:center}
+.cta p{margin:0}
+.wa{min-height:56px;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(100deg,#B8862B 0%,#F0D486 45%,#C9962E 100%);color:var(--btn-ink);border-radius:999px;font-weight:700;font-size:20px;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.3)}
+.bye{font-family:var(--script);font-size:44px;line-height:1.2;margin-top:8px!important}
+a:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+</style>
+<style>*{box-sizing:border-box}body{margin:0}</style>
+</head>
+<body>
+
+<div class="bg">
+<div id="glitter" aria-hidden="true"></div>
+<main class="wrap">
+
+<header class="hero">
+<svg aria-hidden="true" viewBox="130 55 340 410">
+<defs>
+<radialGradient id="shade" cx="0.36" cy="0.3" r="0.78"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.4"/><stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.55"/></radialGradient>
+<linearGradient id="goldbal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6DE97"/><stop offset="0.45" stop-color="#C9962E"/><stop offset="1" stop-color="#7A5512"/></linearGradient>
+<pattern id="glit" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.1" fill="#FFF3C4"/><circle cx="5" cy="4.5" r="0.8" fill="#FFFFFF"/><circle cx="2.5" cy="5.8" r="0.6" fill="#E8C266"/></pattern>
+<pattern id="dotsp" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2.2" fill="#FF8A9A" opacity="0.7"/><circle cx="9" cy="9" r="1.6" fill="#FFD0D8" opacity="0.6"/></pattern>
+<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/></filter>
+<path id="bal" d="M0 -62 C34 -62 50 -33 50 -6 C50 27 23 53 0 58 C-23 53 -50 27 -50 -6 C-50 -33 -34 -62 0 -62 Z"/>
+<ellipse id="hl" cx="-18" cy="-30" rx="10" ry="20" fill="#FFFFFF" opacity="0.6" filter="url(#soft)" transform="rotate(-25 -18 -30)"/>
+</defs>
+<g stroke="#D9B45C" stroke-width="1.4" fill="none" opacity="0.9">
+<path d="M243.7 214.6 Q262 360 300 462"/><path d="M353.5 190 Q332 360 300 462"/><path d="M300 281 Q302 380 300 462"/><path d="M204.2 330.4 Q252 400 300 462"/><path d="M391.3 319.6 Q346 400 300 462"/>
+</g>
+<g filter="url(#drop)">
+<g transform="translate(365 125) rotate(10)"><use href="#bal" fill="#7E0A1F"/><use href="#bal" fill="url(#shade)"/><use href="#hl"/><path d="M-7 66 L7 66 L0 56 Z" fill="#7E0A1F"/></g>
+<g transform="translate(230 150) rotate(-12)"><use href="#bal" fill="#D1162F"/><use href="#bal" fill="url(#dotsp)"/><use href="#bal" fill="url(#shade)"/><use href="#hl"/><path d="M-7 66 L7 66 L0 56 Z" fill="#D1162F"/></g>
+<g transform="translate(405 255) rotate(12)"><use href="#bal" fill="url(#goldbal)"/><use href="#bal" fill="url(#glit)" opacity="0.85"/><use href="#bal" fill="url(#shade)"/><use href="#hl"/><path d="M-7 66 L7 66 L0 56 Z" fill="#B8862B"/></g>
+<g transform="translate(195 265) rotate(-8)"><use href="#bal" fill="#6A0718"/><use href="#bal" fill="url(#shade)"/><use href="#hl"/><path d="M-7 66 L7 66 L0 56 Z" fill="#6A0718"/></g>
+<g transform="translate(300 215)"><use href="#bal" fill="#C8102E"/><use href="#bal" fill="url(#shade)"/><use href="#hl"/><path d="M-7 66 L7 66 L0 56 Z" fill="#C8102E"/></g>
+</g>
+</svg>
+<h1 class="gold">¡A celebrar!</h1>
+<p class="sub gold">Sofía cumple 3 añitos</p>
+<p class="lead">Tres vueltas al sol y quiero festejarlas contigo</p>
+</header>
+
+<section class="card" aria-label="Cuenta regresiva">
+<p class="eyebrow">Faltan</p>
+<div class="count">
+<div><b class="gold" id="cd-d">0</b><span>días</span></div>
+<div><b class="gold" id="cd-h">00</b><span>horas</span></div>
+<div><b class="gold" id="cd-m">00</b><span>min</span></div>
+<div><b class="gold" id="cd-s">00</b><span>seg</span></div>
+</div>
+</section>
+
+<section class="card" aria-label="Cuándo y dónde">
+<div class="when">
+<div><small>Sábado</small><strong>14 nov</strong></div>
+<div><small>Hora</small><strong>4:00 pm</strong></div>
+<div><small>Hasta</small><strong>8:00 pm</strong></div>
+</div>
+<div class="place">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E7C36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+<div><strong style="font-size:21px">Jardín Los Girasoles</strong><span>Av. de las Flores 120, Querétaro</span></div>
+</div>
+<div class="btns">
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Jard%C3%ADn%20Los%20Girasoles%20Quer%C3%A9taro" target="_blank" rel="noopener">Ver ubicación</a>
+<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Cumple%203%20de%20Sof%C3%ADa&amp;dates=20261114T220000Z/20261115T020000Z&amp;location=Jard%C3%ADn%20Los%20Girasoles%2C%20Quer%C3%A9taro" target="_blank" rel="noopener">Agendar</a>
+</div>
+</section>
+
+<section class="card">
+<h2 class="gold">Programa</h2>
+<div class="prog">
+<b>4:00 pm</b><span>Llegada y juegos</span>
+<b>5:30 pm</b><span>Piñata</span>
+<b>6:30 pm</b><span>Pastel y mañanitas</span>
+</div>
+</section>
+
+<section class="card center">
+<h2 class="gold">Regalo</h2>
+<p style="margin:0;line-height:1.45">Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo, habrá lluvia de sobres.</p>
+</section>
+
+<div class="cta">
+<p style="font-style:italic">Confirma antes del 12 de noviembre</p>
+<a class="wa" href="https://wa.me/524421234567?text=Hola%20Ana%2C%20confirmo%20asistencia%20al%20cumple%20de%20Sof%C3%ADa" target="_blank" rel="noopener">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A0612" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+Confirmar por WhatsApp</a>
+<p>Mamá Ana · 442 123 4567</p>
+<p class="bye gold">¡Te espero!</p>
+</div>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var g=document.getElementById('glitter'), a=314;
+  function rnd(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}
+  var golds=['radial-gradient(circle at 35% 35%,#FFF6D0,#D9AE4A 55%,#8A6418)','radial-gradient(circle at 35% 35%,#FFFFFF,#E8C670 50%,#A07A24)','radial-gradient(circle at 35% 35%,#F7E2A0,#C0902E 60%,#6E4E12)'];
+  var html='';
+  for(var i=0;i<240;i++){
+    var y=Math.pow(rnd(),2.4)*280-4, near=1-y/280, s=(0.8+rnd()*2.4*(0.45+near)).toFixed(1);
+    html+='<i style="left:'+(rnd()*100).toFixed(2)+'%;top:'+y.toFixed(1)+'px;width:'+s+'px;height:'+s+'px;background:'+golds[Math.floor(rnd()*3)]+';opacity:'+(0.55+rnd()*0.45).toFixed(2)+'"></i>';
+  }
+  for(var j=0;j<9;j++){
+    var ss=Math.round(8+rnd()*12);
+    html+='<svg width="'+ss+'" height="'+ss+'" viewBox="0 0 20 20" style="position:absolute;left:'+Math.round(rnd()*95)+'%;top:'+Math.round(Math.pow(rnd(),1.6)*240)+'px"><path d="M10 0 L11.4 8.6 L20 10 L11.4 11.4 L10 20 L8.6 11.4 L0 10 L8.6 8.6 Z" fill="#FFF6D8"/></svg>';
+  }
+  g.innerHTML=html;
+
+  var target=new Date('2026-11-14T16:00:00-06:00').getTime();
+  var el={d:document.getElementById('cd-d'),h:document.getElementById('cd-h'),m:document.getElementById('cd-m'),s:document.getElementById('cd-s')};
+  function pad(n){return String(n).padStart(2,'0');}
+  function tick(){
+    var diff=Math.max(0,Math.floor((target-Date.now())/1000));
+    var d=Math.floor(diff/86400);diff-=d*86400;var h=Math.floor(diff/3600);diff-=h*3600;var m=Math.floor(diff/60);
+    el.d.textContent=d;el.h.textContent=pad(h);el.m.textContent=pad(m);el.s.textContent=pad(diff-m*60);
+  }
+  tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
